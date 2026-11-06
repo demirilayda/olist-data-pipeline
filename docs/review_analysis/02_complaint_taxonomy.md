@@ -43,6 +43,13 @@ Apply these in order. The first rule that matches wins.
 
 Wrong item vs not as described: if the customer says *"they sent something else"*, it is `wrong_product`. If they say *"it is not like the photo"*, it is `poor_quality_or_not_as_described`.
 
+Packaging problems: packaging is the seller's job, transport is the carrier's, so they are kept apart.
+- Poor packaging **and the item was damaged** → `damaged_or_defective`.
+- Item intact, but packaging **missing or poor** (no box, loose wrapping) → `poor_quality_or_not_as_described`.
+- `delivery_service` is only for the carrier, post office or address side of delivery, never for packaging.
+
+*This rule was added during hand labeling, when a review said only "the product came without packaging" and no label covered it.*
+
 ## What reading 300 reviews already showed
 These are first impressions to check with the labeled data, not results:
 
