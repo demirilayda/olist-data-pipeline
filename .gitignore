@@ -1,4 +1,6 @@
-/data/
+/data/*
+!/data/labels/
+/data/labels/*.xlsx
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
