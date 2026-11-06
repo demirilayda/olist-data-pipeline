@@ -50,6 +50,8 @@ Packaging problems: packaging is the seller's job, transport is the carrier's, s
 
 *This rule was added during hand labeling, when a review said only "the product came without packaging" and no label covered it.*
 
+Late but arrival unknown: if the customer complains about a delay and does **not** say the order arrived (still waiting, asking where it is, "is the post office on strike?"), use `not_received`. Use `late_delivery` only when the text says the order arrived. *Added during adjudication of LLM vs hand labels, where one review was labeled differently for exactly this reason.*
+
 Customer service scope: `customer_service` covers any complaint about how the seller or store treats the customer, not only missing answers. *Clarified during hand labeling, when a review complained only about careless treatment ("they don't care about customers").*
 
 ## What reading 300 reviews already showed
