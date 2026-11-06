@@ -21,7 +21,7 @@ Each review gets **exactly one primary label**: the problem the customer is main
 | `poor_quality_or_not_as_described` | The item works and is the one listed, but the quality is low or it does not match the photo/description | *"O material é de péssima qualidade, veio com fiapos."* "Very poor material, came with loose threads." |
 | `cancellation_or_refund` | The order was cancelled (often out of stock), a cancellation was ignored, or a refund is not being paid | *"O fornecedor informou que não há estoque. Gostaria do reembolso."* "The supplier said there's no stock. I want a refund." |
 | `delivery_service` | It arrived, but the delivery itself was the problem: had to pick it up at the post office, carrier did not try to deliver | *"Tive que ir buscar em um correio super longe."* "I had to pick it up at a post office far away." |
-| `customer_service` | The only complaint is that the seller or store does not answer or help | *"Não consegue falar com o vendedor quando tem problemas."* "You can't reach the seller when there's a problem." |
+| `customer_service` | The only complaint is customer service: the seller or store does not answer, does not help, or treats the customer carelessly or rudely | *"Não consegue falar com o vendedor quando tem problemas."* "You can't reach the seller when there's a problem." |
 | `other_or_unclear` | No reason given, positive text with a low score, a question, or not about the order | *"Super recomendo, veio antes do prazo."* "Highly recommend, came early." (1 star) |
 
 ### Secondary flag
@@ -38,7 +38,7 @@ Apply these in order. The first rule that matches wins.
 5. **Right item, works, but disappointing → `poor_quality_or_not_as_described`.** Includes "smaller than in the photo", "thin material", "not the color shown in the ad" (when the product is the one listed, not a swap).
 6. **Received complete and intact, only late → `late_delivery`.**
 7. **Only the delivery method was the problem → `delivery_service`.**
-8. **Only the lack of response → `customer_service`.**
+8. **Only customer service (no answer, no help, careless or rude treatment) → `customer_service`.**
 9. Anything else → `other_or_unclear`. Do not guess a reason the text does not state.
 
 Wrong item vs not as described: if the customer says *"they sent something else"*, it is `wrong_product`. If they say *"it is not like the photo"*, it is `poor_quality_or_not_as_described`.
@@ -49,6 +49,8 @@ Packaging problems: packaging is the seller's job, transport is the carrier's, s
 - `delivery_service` is only for the carrier, post office or address side of delivery, never for packaging.
 
 *This rule was added during hand labeling, when a review said only "the product came without packaging" and no label covered it.*
+
+Customer service scope: `customer_service` covers any complaint about how the seller or store treats the customer, not only missing answers. *Clarified during hand labeling, when a review complained only about careless treatment ("they don't care about customers").*
 
 ## What reading 300 reviews already showed
 These are first impressions to check with the labeled data, not results:
