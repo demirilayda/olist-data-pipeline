@@ -10,7 +10,7 @@ They need a short, ranked answer to "what do we fix first?", backed by numbers t
 ## Why it matters
 - Earlier analysis in this repo showed that 1-star orders took **21.3 days** to arrive on average, compared with **10.7 days** for 5-star orders.
 - Only **3.1%** of customers ever order again. Every unhappy first order is likely a lost customer.
-- Star ratings tell us *that* customers are unhappy, not *why*. The reasons are hidden in **10,890 written 1–2 star reviews** (in Portuguese), which nobody can read one by one.
+- Star ratings tell us *that* customers are unhappy, not *why*. The reasons are hidden in **10,867 written 1–2 star reviews** (one per order) (in Portuguese), which nobody can read one by one.
 
 ## Hypotheses
 | # | Hypothesis | How we test it |
