@@ -1,0 +1,8 @@
+review_id,review_text,primary_label_human,primary_label_llm,verdict,note
+00311993b334898af860a795f15a054f,Produto q n tinha na loja..receber n um produto q n gostei..,wrong_product,other_or_unclear,llm_correct,Text does not say a different product was sent; reason unclear
+a90db5bbce5d1850f407f0b2832524a5,"Na foto mostrava duas suspensão, e nas descrição dizia um, logo entendi um par.",poor_quality_or_not_as_described,incomplete_order,llm_correct,"Listing photo showed two, customer received one"
+213c8ee2592bcaf20bb389d324c25a1f,"NAO GOSTE DESSA COMPRA. RECEBI O ESTOJO, BEM DEPOIS AANCHEIRA E AINDA NAO RECEBI A MOCHILA. TRANSTORNOTERRIVEL!",late_delivery,incomplete_order,llm_correct,"Backpack still missing while other items arrived: incomplete, not late"
+68da8c0b251599be554dea4e46b98197,veio um lustre totalmente diferente do solicitado.,poor_quality_or_not_as_described,wrong_product,llm_correct,"""Different from what I ordered"" means another model was sent"
+b957a7bc4c39b5739f4010b6ac710646,Entrega atrasada sera que é correios em greve?,not_received,late_delivery,rule_unclear,"Delay complaint, arrival unknown; rule added: still waiting -> not_received"
+4b3eee59f0db0e4e86fe46150f536e15,Estoque do parceiro zerado.,other_or_unclear,cancellation_or_refund,llm_correct,Out of stock falls under cancellation_or_refund
+91a7aaa7b9b524c624b052a83c76337e,"Quando eu fui comprar o produto,me falaram q viria em uma data,após a compra apareceu outra data.ele demorou muito pra sair do pagamento autorizado.a loja lannister de jatai está suja e mal cuidada!!",other_or_unclear,late_delivery,human_correct,"Several unrelated complaints, none clearly the main one"
